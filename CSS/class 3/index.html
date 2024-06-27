@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: 2s;
+        opacity: 0.4;
+      }
+
+      .main:hover {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 255, 47);
+        transition: 2s;
+        transform: rotate(45deg);
+        border-radius: 50%;
+      }
+
+      a:link {
+        font-size: 2em;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: rgb(225, 228, 26);
+      }
+
+      a:active {
+        color: green;
+      }
+
+      a:hover {
+        color: pink;
+        text-decoration: underline;
+      }
+
+      .para1{
+        color: red;
+        font-size: larger;
+      }
+
+      /* Combinators */
+
+      /* Child Combinator */
+
+      /* .parent > .para1 {
+
+        background-color: yellowgreen;
+      } */
+
+      /* Anchester combinator */
+
+      /* .para1 ~ p{
+        background-color: aqua;
+      } */
+
+      /* Sibiling Combinator */
+    
+      /* .para1 + p{
+        background-color: yellow;
+      } */
+
+      /* nth-child selectors */
+
+      .parent :nth-child(5) {
+        background-color: blue;
+      }
+
+      .anchor1{
+        /* display: none; */
+        /* visibility: hidden; */
+        opacity: 0.4;
+      }
+
+      .para3{
+        display: inline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main"></div>
+
+    <a href="second.html" class="anchor1">Next</a>
+
+    <a href="#">Link</a>
+
+    <div class="parent">
+      <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio
+        inventore velit blanditiis assumenda tenetur, nostrum placeat iusto
+        voluptate animi nobis odit, mollitia quidem! Deserunt placeat voluptas
+        expedita veritatis quisquam!
+      </p>
+
+      <p>
+        nostrum placeat iusto voluptate animi nobis odit, mollitia quidem!
+        Deserunt placeat voluptas expedita veritatis quisquam!
+      </p>
+
+      <p class="para3">Deserunt placeat voluptas expedita veritatis quisquam!</p>
+
+      <span>Hello</span>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+        excepturi soluta doloribus aliquam reiciendis nostrum placeat veniam
+        dolorum perferendis, voluptate rem corrupti quis animi amet dolore
+        commodi illum sint. Tenetur.
+      </p>
+
+      <p>
+        soluta doloribus aliquam reiciendis nostrum placeat veniam dolorum
+        perferendis, voluptate rem corrupti quis animi amet dolore commodi illum
+        sint. Tenetur.
+      </p>
+
+      <p>
+        voluptate rem corrupti quis animi amet dolore commodi illum sint.
+        Tenetur.
+      </p>
+    </div>
+
+    <!-- <p class="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio inventore
+      velit blanditiis assumenda tenetur, nostrum placeat iusto voluptate animi
+      nobis odit, mollitia quidem! Deserunt placeat voluptas expedita veritatis
+      quisquam!
+    </p> -->
+  </body>
+</html>
+
+<!-- css - pseudo classes -->
